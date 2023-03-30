@@ -1,0 +1,23 @@
+{
+  "name": "a02-functions-harivig",
+  "version": "1.0.0",
+  "description": "a02 npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2023-spring/a02-functions-harivig.git"
+  },
+  "author": "harivig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/comp426-2023-spring/a02-functions-harivig/issues"
+  },
+  "homepage": "https://github.com/comp426-2023-spring/a02-functions-harivig#readme",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "type": "module"
+}
