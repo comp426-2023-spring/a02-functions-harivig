@@ -23,7 +23,7 @@ const latitude = args.n || args.s * -1;
 const day = args.d || 1;
 
 //makes the request
-const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+lat+'&longitude='+long+'&timezone='+timezone+'&daily=precipitation_hours&current_weather=true');
+const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+latitude+'&longitude='+longitude+'&timezone='+timezone+'&daily=precipitation_hours&current_weather=true');
 
 const data = await response.json();
 const days = args.d
