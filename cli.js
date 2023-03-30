@@ -28,3 +28,25 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude='+
 const data = await response.json();
 const days = args.d
 
+if (args.j) {
+    console.log(data);
+    process.exit(0);
+  }
+
+  let output = ""
+
+  if (data.daily.precipitation_hours[days] > 0) {
+    output += "You might need your galoshes "
+  } else {
+    output += "You will not need your galoshes "
+  }
+
+  if (days == 0) {
+    output += "today."
+  } else if (days > 1) {
+    output += "in " + days + " days."
+  } else {
+    output += "tomorrow."
+  }
+
+  console.log(output)
